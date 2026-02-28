@@ -1,0 +1,38 @@
+/* external stylesheet */
+
+h1{
+    color: blue;
+        }
+h2{
+    color: brown;
+    text-decoration: underline;
+}
+
+p{               /*foreground colour*/
+    color: red;
+}
+
+button{
+    color: yellow;
+    background-color: rgb(7, 224, 240);
+}
+
+body{
+    background-color: black;
+}
+
+#heading3{
+    color: rgb(233, 237, 10);
+}
+
+.rai{
+    color: rgb(223, 18, 231);
+    font-size: 20px;
+}
+
+.align{
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-transform: capitalize;
+    line-height: normal;
+}

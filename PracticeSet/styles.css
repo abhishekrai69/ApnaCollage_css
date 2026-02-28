@@ -1,0 +1,22 @@
+/* Q1: set background color of #box to blue */
+#box {
+  background-color: blue;
+  color: white;
+  padding: 12px;
+  margin-bottom: 16px;
+}
+
+/* Q2: headings with class "heading" set to red */
+.heading {
+  color: red;
+  margin: 6px 0;
+}
+
+/* Q3: green button using external stylesheet */
+.btn-external {
+  background-color: green;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  cursor: pointer;
+}

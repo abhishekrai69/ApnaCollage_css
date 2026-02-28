@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Traffic Light Simulation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Traffic Light Simulation System</h1>
+
+<div class="signal-box">
+    <div class="light red"></div>
+    <div class="light yellow"></div>
+    <div class="light green"></div>
+</div>
+
+<h2 id="status">Signal Status</h2>
+<h2 id="timer">Timer: 0</h2>
+
+<div class="road">
+    <div class="car" id="car"></div>
+</div>
+
+<div class="buttons">
+    <button onclick="toggleMode()">Day/Night</button>
+    <button onclick="startSignal()">Start</button>
+    <button onclick="stopSignal()">Stop</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

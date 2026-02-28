@@ -1,0 +1,131 @@
+body {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 10px;
+    transition: background 0.5s, color 0.5s;
+}
+
+h1 {
+    margin-top: 10px;
+}
+
+/* SIGNAL BOX */
+.signal-box {
+    background-color: black;
+    width: 30vw;
+    max-width: 150px;
+    min-width: 90px;
+    padding: 15px;
+    margin: 20px auto;
+    border-radius: 15px;
+}
+
+/* LIGHTS */
+.light {
+    height: 8vw;
+    width: 8vw;
+    max-height: 100px;
+    max-width: 100px;
+    min-height: 50px;
+    min-width: 50px;
+    border-radius: 50%;
+    margin: 10px auto;
+    opacity: 0.3;
+}
+
+.red { background-color: red; }
+.yellow { background-color: yellow; }
+.green { background-color: green; }
+
+.active {
+    opacity: 1;
+    box-shadow: 0 0 25px white;
+}
+
+/* TEXT */
+#timer {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#status {
+    font-size: 26px;
+    font-weight: bold;
+}
+
+/* ROAD */
+.road {
+    width: 90%;
+    height: 15vh;
+    max-height: 120px;
+    background-color: gray;
+    margin: 30px auto;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+/* CAR */
+.car {
+    width: 12vw;
+    height: 6vw;
+    max-width: 80px;
+    max-height: 50px;
+    min-width: 40px;
+    min-height: 25px;
+    background-color: blue;
+    position: absolute;
+    bottom: 20%;
+    left: 0;
+    border-radius: 10px;
+}
+
+/* CAR ANIMATION */
+.moveCar {
+    animation: moveCarAnim 5s linear infinite;
+}
+
+@keyframes moveCarAnim {
+    0% { left: 0; }
+    100% { left: 80%; }
+}
+
+/* BUTTONS */
+.buttons {
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 80%;
+    max-width: 200px;
+}
+
+/* NIGHT MODE */
+.night {
+    background-color: #0b1a2d;
+    color: white;
+}
+
+.night .road {
+    background-color: #2c2c2c;
+}
+
+.night .signal-box {
+    background-color: #111;
+}
+
+/* RESPONSIVE TEXT */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 18px;
+    }
+    #timer, #status {
+        font-size: 18px;
+    }
+}
